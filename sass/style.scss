@@ -1,0 +1,103 @@
+
+// Setting color scheme
+
+    $metalicWhite: #f9f9f9;
+    $metalicBlack: #2a2a2a;
+    $mattGrey: #555555;
+    $hotPink: #ee534f;
+    $burntPink: #a25452;
+//
+// Creating style packages
+
+    @mixin dark {
+        background-color: $metalicBlack;
+        color: $metalicWhite;
+    }
+
+    @mixin light {
+        background-color: $metalicWhite;
+        color: $metalicBlack;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+//
+/*--------- Official Homepage Styling ---------*/
+
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    body {
+        margin: 0;
+        header {
+            padding: 0;
+            nav {
+                @include light;
+                display: none;
+                padding: 0.5%;
+                ul {
+                    word-spacing: 30px;
+                    padding: 0;
+                    grid-column: 1/7;
+                    text-align: center;
+                    li {
+                        display: inline;
+                    }
+                    #homeLink {
+                        color: $hotPink;
+                    }
+                }
+            }
+            section {
+                @include dark;
+                padding: 10%;
+                text-align: center;
+                h1 {
+                    font-size: 30px;
+                    letter-spacing: 2px;
+                    margin: 0;
+                    padding-bottom: 40px;
+                }
+                p {
+                    margin: 0 5%;
+                    padding-bottom: 40px;
+                    font-size: 15px;
+                }
+                button {
+                    @include dark;
+                    border: 1px $mattGrey solid;
+                    border-radius: 2px;
+                    padding: 10% 0;
+                    width: 95%;
+                    margin: 2px auto;
+                    font-size: 10px;
+                }
+                #readMore {
+                    background-color: $hotPink;
+                    border: 1px $hotPink solid;
+                }
+            }
+        }
+    }
+
+    /*
+        <When elements are nested, media quieries cannot be declared outside of their nest, therefore any elements that need to be queried should be put outside of the nest to avoid confusion and reducing code quality.>
+    */
+    
+    //----Pending for media queries---->
+    .buttonBox {
+        width: 75%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    
+/*---/---Media Enquiries for the Homepage---/---*/
+
+@media (min-width: 550px) {
+    .buttonBox {
+        width: 50%;
+    }
+}

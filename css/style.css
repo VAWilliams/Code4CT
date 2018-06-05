@@ -1,0 +1,66 @@
+/*--------- Official Homepage Styling ---------*/
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  margin: 0; }
+  body header {
+    padding: 0; }
+    body header nav {
+      background-color: #f9f9f9;
+      color: #2a2a2a;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      display: none;
+      padding: 0.5%; }
+      body header nav ul {
+        word-spacing: 30px;
+        padding: 0;
+        grid-column: 1/7;
+        text-align: center; }
+        body header nav ul li {
+          display: inline; }
+        body header nav ul #homeLink {
+          color: #ee534f; }
+    body header section {
+      background-color: #2a2a2a;
+      color: #f9f9f9;
+      padding: 10%;
+      text-align: center; }
+      body header section h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+        margin: 0;
+        padding-bottom: 40px; }
+      body header section p {
+        margin: 0 5%;
+        padding-bottom: 40px;
+        font-size: 15px; }
+      body header section button {
+        background-color: #2a2a2a;
+        color: #f9f9f9;
+        border: 1px #555555 solid;
+        border-radius: 2px;
+        padding: 10% 0;
+        width: 95%;
+        margin: 2px auto;
+        font-size: 10px; }
+      body header section #readMore {
+        background-color: #ee534f;
+        border: 1px #ee534f solid; }
+
+/*
+    <When elements are nested, media quieries cannot be declared outside of their nest, therefore any elements that need to be queried should be put outside of the nest to avoid confusion and reducing code quality.>
+*/
+.buttonBox {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+/*---/---Media Enquiries for the Homepage---/---*/
+@media (min-width: 550px) {
+  .buttonBox {
+    width: 50%; } }
+
+/*# sourceMappingURL=style.css.map */
