@@ -28,7 +28,7 @@ body {
       padding: 10%;
       text-align: center; }
       body header section h1 {
-        font-size: 30px;
+        font-size: 8vw;
         letter-spacing: 2px;
         margin: 0;
         padding-bottom: 40px; }
@@ -36,31 +36,89 @@ body {
         margin: 0 5%;
         padding-bottom: 40px;
         font-size: 15px; }
-      body header section button {
-        background-color: #2a2a2a;
-        color: #f9f9f9;
-        border: 1px #555555 solid;
-        border-radius: 2px;
-        padding: 10% 0;
-        width: 95%;
-        margin: 2px auto;
-        font-size: 10px; }
       body header section #readMore {
         background-color: #ee534f;
         border: 1px #ee534f solid; }
+    body header #slideIndicateBox {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0 auto;
+      margin-top: 60px;
+      width: 65px; }
+      body header #slideIndicateBox div {
+        margin: 0 2.5px;
+        height: 3px;
+        background-color: #f9f9f9;
+        border-radius: 1px; }
+      body header #slideIndicateBox #midIndicate {
+        background-color: #ee534f;
+        height: 7px;
+        margin-top: -2px; }
 
 /*
     <When elements are nested, media quieries cannot be declared outside of their nest, therefore any elements that need to be queried should be put outside of the nest to avoid confusion and reducing code quality.>
 */
 .buttonBox {
-  width: 75%;
+  width: 220px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr; }
 
+.sectionButton {
+  background-color: #2a2a2a;
+  color: #f9f9f9;
+  border: 1px #555555 solid;
+  border-radius: 2px;
+  padding: 10% 0;
+  width: 95%;
+  margin: 2px auto;
+  font-size: 11px; }
+
+article {
+  background-color: #f9f9f9;
+  color: #2a2a2a;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr;
+  padding: 10%; }
+  article #intro {
+    margin: 0 auto; }
+    article #intro hr {
+      border-radius: 2px;
+      width: 45%;
+      border: none;
+      height: 1.5px;
+      float: left;
+      background-color: lightgrey;
+      margin-bottom: 30px; }
+    article #intro #orangeRule {
+      width: 60px;
+      background-color: #ee534f;
+      height: 2.5px;
+      margin-top: 7.5px; }
+    article #intro #stopFloat {
+      clear: both; }
+    article #intro button {
+      background-color: #f9f9f9;
+      color: #2a2a2a;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      display: block;
+      margin: 0 auto;
+      margin-top: 10%;
+      border: 1px #555555 solid;
+      border-radius: 2px;
+      padding: 15px; }
+  article #images {
+    display: grid;
+    grid-gap: 20px;
+    padding-top: 60px;
+    margin: 0 15%;
+    height: 160vw; }
+    article #images .img {
+      background-color: #555555;
+      border-radius: 2px; }
+
 /*---/---Media Enquiries for the Homepage---/---*/
-@media (min-width: 550px) {
-  .buttonBox {
-    width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */

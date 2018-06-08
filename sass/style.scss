@@ -53,7 +53,7 @@
                 padding: 10%;
                 text-align: center;
                 h1 {
-                    font-size: 30px;
+                    font-size: 8vw;
                     letter-spacing: 2px;
                     margin: 0;
                     padding-bottom: 40px;
@@ -63,18 +63,27 @@
                     padding-bottom: 40px;
                     font-size: 15px;
                 }
-                button {
-                    @include dark;
-                    border: 1px $mattGrey solid;
-                    border-radius: 2px;
-                    padding: 10% 0;
-                    width: 95%;
-                    margin: 2px auto;
-                    font-size: 10px;
-                }
                 #readMore {
                     background-color: $hotPink;
                     border: 1px $hotPink solid;
+                }
+            }
+            #slideIndicateBox {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                margin: 0 auto;
+                margin-top: 60px;
+                width: 65px;
+                div {
+                    margin: 0 2.5px;
+                    height: 3px;
+                    background-color: $metalicWhite;
+                    border-radius: 1px;
+                }
+                #midIndicate {
+                    background-color: $hotPink;
+                    height: 7px;
+                    margin-top: -2px;
                 }
             }
         }
@@ -86,18 +95,76 @@
     
     //----Pending for media queries---->
     .buttonBox {
-        width: 75%;
+        width: 220px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .sectionButton {
+        @include dark;
+        border: 1px $mattGrey solid;
+        border-radius: 2px;
+        padding: 10% 0;
+        width: 95%;
+        margin: 2px auto;
+        font-size: 11px;
+    }
+    article {
+        @include light;
+        grid-template-columns: 1fr;
+        padding: 10%;
+        #intro {
+            margin: 0 auto;
+            hr {
+                border-radius: 2px;
+                width: 45%;
+                border: none;
+                height: 1.5px;
+                float: left;
+                background-color: lightgrey;
+                margin-bottom: 30px;
+            }
+            #orangeRule {
+                width: 60px;
+                background-color: $hotPink;
+                height: 2.5px;
+                margin-top: 7.5px;
+            }
+            #stopFloat {
+                clear: both;
+            }
+            button {
+                @include light;
+                display: block;
+                margin: 0 auto;
+                margin-top: 10%;
+                border: 1px $mattGrey solid;
+                border-radius: 2px;
+                padding: 15px;
+            }
+        }
+        #images {
+            display: grid;
+            grid-gap: 20px;
+            padding-top: 60px;
+            margin: 0 15%;
+            .img {
+                background-color: $mattGrey;
+                border-radius: 2px;
+            }
+            height: 160vw;
+        }
     }
 
 
     
 /*---/---Media Enquiries for the Homepage---/---*/
 
-@media (min-width: 550px) {
-    .buttonBox {
-        width: 50%;
-    }
-}
+// @media (min-width: 420px) {
+//     .buttonBox {
+//         width: 60%;
+//     }
+//     button {
+//         width: 20;
+//     }
+// }
