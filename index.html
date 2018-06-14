@@ -8,30 +8,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        
-        <header>
 
+        <header>
             <nav>
-                <div id="logo"><img src="images/code4ct-logo-1.jpg" alt="logo" width="100%"></div>
-                <button id="burger" onclick="roll()">
-                    <img id="burgerIcon" src="images/burger-icon.png" alt="burger" width="50%">
-                </button>
+                <div id="logo"><img src="images/code4ct-logo-1.jpg" alt="logo" width="150px"></div>
+                <div id="box">
+                    <input type="checkbox">
+                    <img src="images/burger-icon.png" alt="burger" width="60px">
+                </div>
                 <ul>
                     <li id="homeLink">HOME</li>
                     <li>SERVICE</li>
                     <li>ABOUT</li>
-                    <li>CONTACT</li>                                
+                    <li>CONTACT</li>
                 </ul>
             </nav>
-
-            <section>
+            <section id="contentWrapper">
                 <div id="content">
-                        <h1>CREATIVE WORK PLAN FOR BUSINESSES</h1>
+                        <h1>Code for Cape Town</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eos sequi odio. Repudiandae mollitia quo accusamus unde eligendi eos assumenda nesciunt beatae nostrum earum voluptatibus ipsa consectetur inventore, sapiente possimus.
                         </p>
                         <div class="buttonBox">
-                            <button class="sectionButton" id="readMore">READ MORE</button>
+                            <button class="sectionButton readMore">READ MORE</button>
                             <button class="sectionButton">DONATE NOW</button>
                         </div>
                         <div id="slideIndicateBox">
@@ -41,12 +40,12 @@
                         </div>
                 </div>
             </section>
-
         </header>
-        <article>
+
+        <section class="sectionContainer">
             <div class="intro">
                 <h1>Who We Are</h1>
-                <hr id="orangeRule"><hr>
+                <hr class="orangeRule"><hr>
                 <p class="stopFloat">
                     <strong>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repudiandae eum, provident dolores officiis amet aut culpa asperiores.
@@ -58,47 +57,49 @@
                 </p>
                 <button>Read More</button>
                 <div class="images">
-                    <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img"></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
-        </article>
-        <div id="work">
+        </section>
+
+        <div class="banner">
             <div>
-                <img src="" alt="">
+                <img src="images/pc-icon.png" alt="pc" width="100px">
                 <h1>WEB DESIGN</h1>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur saepe eaque ipsa eius, iure consequuntur laborum laboriosam unde sit officiis consectetur optio, quo, necessitatibus aspernatur. Quaerat pariatur velit at quidem!
                 </p>
             </div>
             <div>
-                <img src="" alt="">
+                <img src="images/doc-icon.png" alt="doc" width="120px">
                 <h1>WEB DESIGN</h1>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur saepe eaque ipsa eius, iure consequuntur laborum laboriosam unde sit officiis consectetur optio, quo, necessitatibus aspernatur. Quaerat pariatur velit at quidem!
                 </p>
             </div>
             <div>
-                <img src="" alt="">
+                <img src="images/cam-icon.png" alt="cam" width="100px">
                 <h1>WEB DESIGN</h1>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur saepe eaque ipsa eius, iure consequuntur laborum laboriosam unde sit officiis consectetur optio, quo, necessitatibus aspernatur. Quaerat pariatur velit at quidem!
                 </p>
             </div>
             <div>
-                <img src="" alt="">
+                <img src="images/cam-icon.png" alt="icon" width="100px">
                 <h1>WEB DESIGN</h1>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur saepe eaque ipsa eius, iure consequuntur laborum laboriosam unde sit officiis consectetur optio, quo, necessitatibus aspernatur. Quaerat pariatur velit at quidem!
                 </p>
             </div>
         </div>
-        <article>
-            <div class="intro">
+
+        <section class="sectionContainer">
+            <div>
                 <h1>Our Awesome Portfolio</h1>
-                <hr id="orangeRule"><hr>
+                <hr class="orangeRule"><hr>
                 <p class="stopFloat">
                     <strong>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repudiandae eum, provident dolores officiis amet aut culpa asperiores.
@@ -109,16 +110,16 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel odit fugiat dignissimos ad provident iusto aliquid aperiam rem nemo, tempora animi ea omnis a, autem soluta reprehenderit debitis qui.
                 </p>
                 <div class="images" id="workImages">
-                    <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img"></div>
-                    <div class="img" id="imgBig"></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="imgBig"></div>
                 </div>
             </div>
-            <div class="intro">
+            <div>
                 <h1>Meet Our Team</h1>
-                <hr id="orangeRule"><hr>
+                <hr class="orangeRule"><hr>
                 <p class="stopFloat">
                     <strong>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repudiandae eum, provident dolores officiis amet aut culpa asperiores.
@@ -128,11 +129,13 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam rerum harum tempora, deleniti nobis suscipit error odit illum amet facere vero maxime fugit enim architecto corrupti dicta quis. Sequi.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel odit fugiat dignissimos ad provident iusto aliquid aperiam rem nemo, tempora animi ea omnis a, autem soluta reprehenderit debitis qui.
                 </p>
-                <div class="images" id="teamImages">
+                <div id="teamImages">
 
-                    <div class="img"></div>
+                    <div class="img">
+                        <img src="images/Emma-profile-round.png" alt="Emma">
+                    </div>
                     <div class="about">
-                            <h1>Harrison Smith</h1>
+                            <h1>Emma Dicks</h1>
                             <p class="jobTitle">General Manager</p>
                             <hr>
                             <p class="stopFloat" class="personInfo">
@@ -141,9 +144,11 @@
                             </p>
                     </div>
 
-                    <div class="img"></div>
+                    <div class="img">
+                        <img src="images/Andz-profile-round.png" alt="Andz">
+                    </div>
                     <div class="about">
-                            <h1>Jafarni Doe</h1>
+                            <h1>Andrea Petersen</h1>
                             <p class="jobTitle">Creative Director</p>
                             <hr>
                             <p class="stopFloat" class="personInfo">
@@ -152,9 +157,11 @@
                             </p>
                     </div>
 
-                    <div class="img"></div>
+                    <div class="img">
+                        <img src="images/Tracy-profile-round.png" alt="Tracy">
+                    </div>
                     <div class="about">
-                            <h1>Adam Smith</h1>
+                            <h1>Tracy-Anne Sikenjana</h1>
                             <p class="jobTitle">Video Producer</p>
                             <hr>
                             <p class="stopFloat" class="personInfo">
@@ -163,9 +170,11 @@
                             </p>
                     </div>
 
-                    <div class="img"></div>
+                    <div class="img">
+                        <img src="images/Tegan-profile-round.png" alt="Jannie">
+                    </div>
                     <div class="about">
-                            <h1>Jannie Doe</h1>
+                            <h1>Tegan Crous</h1>
                             <p class="jobTitle">Photographer</p>
                             <hr>
                             <p class="stopFloat" class="personInfo">
@@ -176,11 +185,60 @@
 
                 </div>
             </div>
-        </article>
+        </section>
 
+        <div class="banner" id="fixLayout">
+          <div class="weight">
+              <div class="alignLeft">
+                <hr class="orangeRule">
+                <h1 class="stopFloat">1800+</h1>
+                <p>
+                    Lorem ipsum
+                </p>
+              </div>
+          </div>
+            <div class="weight">
+                <div class="alignLeft">
+                  <hr class="orangeRule">
+                  <h1 class="stopFloat">1800+</h1>
+                  <p>
+                      Lorem ipsum
+                  </p>
+                </div>
+            </div>
+            <div class="weight">
+                <div class="alignLeft">
+                  <hr class="orangeRule">
+                  <h1 class="stopFloat">1800+</h1>
+                  <p>
+                      Lorem ipsum
+                  </p>
+                </div>
+            </div>
+            <div class="weight">
+                <div class="alignLeft">
+                  <hr class="orangeRule">
+                  <h1 class="stopFloat">1800+</h1>
+                  <p>
+                      Lorem ipsum
+                  </p>
+                </div>
+            </div>
+        </div>
 
+        <section class="sectionContainer">
+            <div id="miniForm">
+                <h1>SUBSCRIBE TO US</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repudiandae eum, provident dolores officiis amet aut culpa asperiores.
+                </p>
+                <div class="buttonBox">
+                    <input type="email" name="email_address" value="">
+                    <button class="sectionButton readMore">SUBSCRIBE</button>
+                </div>
+            </div>
+        </section>
 
-        <script src="js/script.js"></script>
-
+        <!-- <script src="js/script.js"></script> -->
     </body>
 </html>
