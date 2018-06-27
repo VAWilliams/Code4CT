@@ -4,94 +4,124 @@
         <meta charset="utf-8">
         <title>Code4CT | Home</title>
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="js\jquery-3.3.1.min.js" type="text/javascript"></script>
+        <link rel="icon" type="favicon" href="images/title_image.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
 
-        <header>
-            <nav>
-                <div id="logo"><img src="images/code4ct-logo-1.jpg" alt="logo" width="150px"></div>
-                <div id="box">
-                    <input type="checkbox">
-                    <img src="images/burger-icon.png" alt="burger" width="60px">
+        <nav>
+            <div id="logo"><img src="images/code4ct-logo-1.jpg" alt="logo" width="150px"></div>
+            <div id="box">
+                <!-- <input type="checkbox"> -->
+                <div id="burger" name="">
+                    <div id="one"></div>
+                    <div id="two"></div>
+                    <div id="three"></div>
                 </div>
-                <ul>
-                    <li id="homeLink">HOME</li>
-                    <li>SERVICE</li>
-                    <li>ABOUT</li>
-                    <li>CONTACT</li>
-                </ul>
-            </nav>
-            <section id="contentWrapper">
-                <div id="content">
-                        <h1>Code for Cape Town</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eos sequi odio. Repudiandae mollitia quo accusamus unde eligendi eos assumenda nesciunt beatae nostrum earum voluptatibus ipsa consectetur inventore, sapiente possimus.
-                        </p>
-                        <div class="buttonBox">
-                            <button class="sectionButton readMore">READ MORE</button>
-                            <button class="sectionButton">DONATE NOW</button>
-                        </div>
-                        <div id="slideIndicateBox">
-                            <div></div>
-                            <div id="midIndicate"></div>
-                            <div></div>
-                        </div>
-                </div>
-            </section>
-        </header>
+            </div>
+            <ul id="uList">
+                <li class="pinkLink"> <a href="index.html">HOME</a> </li>
+                <li class="pinkLink"> <a href="courses.html">COURSES</a> </li>
+                <li class="pinkLink"> <a href="portfolio.html">PORTFOLIO</a> </li>
+                <li> <a href="about.html">ABOUT</a> </li>
+                <li> <a href="contact.html">CONTACT</a> </li>
+            </ul>
+            <div class="searchWrap">
+              <input type="text" name="" value="" placeholder="search..">
+              <button type="button" name="button">#</button>
+            </div>
+        </nav>
 
+
+        <div class="slideshow-container">
+            <div id="content">
+              <h1>Code for Cape Town</h1>
+              <p>
+                  We want to see young women empowered to leverage technology for social innovation, so that there is greater diversity in the African tech industry. We want high school girls to have an enabling environment to imagine and create new technology that is relevant to a South African context.
+              </p>
+              <div class="buttonBox">
+                  <button class="sectionButton readMore"> <span>Start Coding</span> </button>
+                  <button class="sectionButton"> <span>DONATE NOW</span> </button>
+              </div>
+            </div>
+
+          <div class="mySlides fade">
+            <img class="slideImgs" src="images/homeHeadMedium.jpg">
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slideImgs" src="images/code4ct_homeslider2.JPG">
+          </div>
+
+          <div class="mySlides fade">
+            <img class="slideImgs"  src="images/code4ct_homeslider3.jpg">
+          </div>
+
+          </div>
+          <br>
+
+          <div id="buttonBox" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+
+
+        <!-- sectionContainer classes refer to white styled elements -->
         <section class="sectionContainer">
             <div class="intro">
-                <h1>Who We Are</h1>
-                <hr class="orangeRule"><hr>
-                <p class="stopFloat">
-                    <strong>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repudiandae eum, provident dolores officiis amet aut culpa asperiores.
-                    </strong>
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam rerum harum tempora, deleniti nobis suscipit error odit illum amet facere vero maxime fugit enim architecto corrupti dicta quis. Sequi.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel odit fugiat dignissimos ad provident iusto aliquid aperiam rem nemo, tempora animi ea omnis a, autem soluta reprehenderit debitis qui.
-                </p>
-                <button>Read More</button>
+                <div class="posImages">
+                  <h1>Who We Are</h1>
+                  <hr class="orangeRule"><hr>
+                  <p class="stopFloat">
+                      <strong>
+                        Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development.
+                      </strong>
+                  </p>
+                  <p>
+                    These are skills that everyone should have. Even if you have no intention of becoming a professional coder, you will benefit from knowing how to think in this way in this increasingly computerized economy. A growing number of permanent job positions that use information technology to deliver a product or a service are becoming available in the local economy.  It is estimated that nearly 75000 such jobs will come online in South Africa within the next five years.  These digital jobs will mostly be driven by the ICT, Business Process Outsourcing (BPO), and the financial services industries.
+                  </p>
+                  <button style="margin-left:0">Read More</button>
+                </div>
                 <div class="images">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div id="img1"></div>
+                    <div id="img2"></div>
+                    <div id="img3"></div>
+                    <div id="img4"></div>
                 </div>
             </div>
         </section>
 
+        <!-- banner classes refer to black styled elements -->
         <div class="banner">
-            <div>
-                <img src="images/pc-icon.png" alt="pc" width="100px">
-                <h1>WEB DESIGN</h1>
+            <div class="padImages">
+                <img src="images/pc.png" alt="pc" width="100px">
+                <h1>Coding</h1>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur saepe eaque ipsa eius, iure consequuntur laborum laboriosam unde sit officiis consectetur optio, quo, necessitatibus aspernatur. Quaerat pariatur velit at quidem!
+                    Learn how to build your own websites using HTML, CSS, JavaScript & JQuery. Go on to explore exciting modules from game development to user experience design.
                 </p>
             </div>
-            <div>
-                <img src="images/doc-icon.png" alt="doc" width="120px">
-                <h1>WEB DESIGN</h1>
+            <div class="padImages">
+                <img src="images/volume.png" alt="doc" width="100px">
+                <h1>Communication</h1>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur saepe eaque ipsa eius, iure consequuntur laborum laboriosam unde sit officiis consectetur optio, quo, necessitatibus aspernatur. Quaerat pariatur velit at quidem!
+                    Learn how to pitch ideas, represent yourself online, communicate professionally and work with online collaboration tools.
                 </p>
             </div>
-            <div>
-                <img src="images/cam-icon.png" alt="cam" width="100px">
-                <h1>WEB DESIGN</h1>
+            <div class="padImages">
+                <img src="images/wrench.png" alt="wrench" width="100px">
+                <h1>Problem Solving</h1>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur saepe eaque ipsa eius, iure consequuntur laborum laboriosam unde sit officiis consectetur optio, quo, necessitatibus aspernatur. Quaerat pariatur velit at quidem!
+                    Apply your coding skills to issues you are interested in. You will learn how to tackle complex problems using the design thinking process.
                 </p>
             </div>
-            <div>
-                <img src="images/cam-icon.png" alt="icon" width="100px">
-                <h1>WEB DESIGN</h1>
+            <div class="padImages">
+                <img src="images/doc.png" alt="doc" width="130px" height="100px">
+                <h1>Career Guidance</h1>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur saepe eaque ipsa eius, iure consequuntur laborum laboriosam unde sit officiis consectetur optio, quo, necessitatibus aspernatur. Quaerat pariatur velit at quidem!
+                    Explore future options by meeting different companies doing exciting things with technology. We offer career testing and connect you to our network of study institutions and bursary programs.
                 </p>
             </div>
         </div>
@@ -102,18 +132,17 @@
                 <hr class="orangeRule"><hr>
                 <p class="stopFloat">
                     <strong>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repudiandae eum, provident dolores officiis amet aut culpa asperiores.
+                        Over the past 3 years, Code for Cape Town has reached over 600 young women with coding and social innovation. Not only have they been exposed to coding but they have also done careers and life skills courses, design thinking workshops and social innovation projects to address local challenges.
                     </strong>
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam rerum harum tempora, deleniti nobis suscipit error odit illum amet facere vero maxime fugit enim architecto corrupti dicta quis. Sequi.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel odit fugiat dignissimos ad provident iusto aliquid aperiam rem nemo, tempora animi ea omnis a, autem soluta reprehenderit debitis qui.
+                    Out of the 50 learners who joined our programme in 2014 and 2015 and have now left school, 40 are pursuing further studies or skills development.
                 </p>
                 <div class="images" id="workImages">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div id="work_img1" ></div>
+                    <div id="work_img2"></div>
+                    <div id="work_img3"></div>
+                    <div id="work_img4"></div>
                     <div id="imgBig"></div>
                 </div>
             </div>
@@ -122,12 +151,11 @@
                 <hr class="orangeRule"><hr>
                 <p class="stopFloat">
                     <strong>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repudiandae eum, provident dolores officiis amet aut culpa asperiores.
+                        Our facilitators are passionate about teaching and seeing Code for Cape Town participants grow in their professional and personal development.
                     </strong>
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam rerum harum tempora, deleniti nobis suscipit error odit illum amet facere vero maxime fugit enim architecto corrupti dicta quis. Sequi.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel odit fugiat dignissimos ad provident iusto aliquid aperiam rem nemo, tempora animi ea omnis a, autem soluta reprehenderit debitis qui.
+                    Code for Cape Town’s teaching team is made up of trained facilitators who are either working in the industry as developers or studying Computer Science or Information Systems at tertiary institutions such as UCT, UWC and CPUT.
                 </p>
                 <div id="teamImages">
 
@@ -136,11 +164,10 @@
                     </div>
                     <div class="about">
                             <h1>Emma Dicks</h1>
-                            <p class="jobTitle">General Manager</p>
+                            <p class="jobTitle">Founder and Director</p>
                             <hr>
                             <p class="stopFloat" class="personInfo">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam rerum harum tempora, deleniti nobis suscipit error odit illum amet facere vero maxime fugit enim architecto corrupti dicta quis. Sequi.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Emma is passionate about providing high quality education that enables young people to bring innovative ideas to life and play an active role in South Africa’s economy.
                             </p>
                     </div>
 
@@ -149,11 +176,10 @@
                     </div>
                     <div class="about">
                             <h1>Andrea Petersen</h1>
-                            <p class="jobTitle">Creative Director</p>
+                            <p class="jobTitle">Operations Lead</p>
                             <hr>
                             <p class="stopFloat" class="personInfo">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam rerum harum tempora, deleniti nobis suscipit error odit illum amet facere vero maxime fugit enim architecto corrupti dicta quis. Sequi.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Andrea thrives on seeing key players in the Code4CT ecosystem discover how they can make the greatest impact. When she is not co-ordinating the Code4CT family she can be found enjoying the diverse cuisine and great outdoors that Cape Town has to offer.
                             </p>
                     </div>
 
@@ -162,11 +188,10 @@
                     </div>
                     <div class="about">
                             <h1>Tracy-Anne Sikenjana</h1>
-                            <p class="jobTitle">Video Producer</p>
+                            <p class="jobTitle">Leadership Program Coordinator</p>
                             <hr>
                             <p class="stopFloat" class="personInfo">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam rerum harum tempora, deleniti nobis suscipit error odit illum amet facere vero maxime fugit enim architecto corrupti dicta quis. Sequi.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tracy joined the Code4CT program in 2015 and then matriculated from Rustenburg Girls’ High in 2016. During her time at Code4CT she facilitated coding classes, headed up the Ambassador programme and assisted with all program operations and logistics.
                             </p>
                     </div>
 
@@ -175,11 +200,11 @@
                     </div>
                     <div class="about">
                             <h1>Tegan Crous</h1>
-                            <p class="jobTitle">Photographer</p>
+                            <p class="jobTitle">Program Lead</p>
                             <hr>
                             <p class="stopFloat" class="personInfo">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam rerum harum tempora, deleniti nobis suscipit error odit illum amet facere vero maxime fugit enim architecto corrupti dicta quis. Sequi.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tegan heads up the high school program.
+                                She is spurred on by a heart for people and seeing them pursue their potential in a safe, fun and nurturing environment. She has experience working with youth in various formats and found herself in the tech industry quite by mistake, but with no regrets.
                             </p>
                     </div>
 
@@ -187,50 +212,52 @@
             </div>
         </section>
 
+        <!-- This elements layout had to be optimed  -->
         <div class="banner" id="fixLayout">
           <div class="weight">
               <div class="alignLeft">
                 <hr class="orangeRule">
-                <h1 class="stopFloat">1800+</h1>
+                <h1 class="stopFloat coffee" id="counter1"></h1>
                 <p>
-                    Lorem ipsum
+                    Cups of Coffee
                 </p>
               </div>
           </div>
             <div class="weight">
                 <div class="alignLeft">
                   <hr class="orangeRule">
-                  <h1 class="stopFloat">1800+</h1>
-                  <p>
-                      Lorem ipsum
+                  <h1 class="stopFloat" id="counter2">780+</h1>
+                  <p id="girlsInc">
+                      Girls
                   </p>
                 </div>
             </div>
             <div class="weight">
                 <div class="alignLeft">
                   <hr class="orangeRule">
-                  <h1 class="stopFloat">1800+</h1>
-                  <p>
-                      Lorem ipsum
+                  <h1 class="stopFloat" id="counter3">3120+</h1>
+                  <p id="projectInc">
+                      Projects Completed
                   </p>
                 </div>
             </div>
             <div class="weight">
                 <div class="alignLeft">
                   <hr class="orangeRule">
-                  <h1 class="stopFloat">1800+</h1>
-                  <p>
-                      Lorem ipsum
+                  <h1 class="stopFloat" id="counter4">8765+</h1>
+                  <p id="codingInc">
+                      Hours Coding
                   </p>
                 </div>
             </div>
+
         </div>
 
         <section class="sectionContainer">
             <div id="miniForm">
                 <h1>SUBSCRIBE TO US</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repudiandae eum, provident dolores officiis amet aut culpa asperiores.
+                    Individuals and companies may choose to align themselves to our work by becoming a #FriendofCode4CT.
                 </p>
                 <div class="buttonBox">
                     <input type="email" name="email_address" value="">
@@ -239,6 +266,71 @@
             </div>
         </section>
 
-        <!-- <script src="js/script.js"></script> -->
+        <div class="banner carousel">
+            <div id="carousalWrapper">
+                <img id="carItem1" class="item" src="images/carousal/Code4CT-Partners-Automattic-Logo.png" alt="autoLogo">
+                <img id="carItem2" class="item" src="images/carousal/Code4CT-Partners-CSG-Logo.png" alt="CSGLogo">
+                <img id="carItem3" class="item" src="images/carousal/Code4CT-Partners-Deloitte-Digital.png" alt="digital">
+                <img id="carItem4" class="item" src="images/carousal/Code4CT-Partners-Lwande.png" alt="lwande">
+                <img id="carItem5" class="item" src="images/carousal/Code4CT-Partners-Mobenzi-Logo.png" alt="mobenzi">
+                <img id="carItem6" class="item" src="images/carousal/Code4CT-Partners-Open-Box.png" alt="openBox">
+                <img id="carItem7" class="item" src="images/carousal/Code4CT-Partners-Saratoga-Logo.png" alt="saratonga">
+                <img id="carItem8" class="item" src="images/carousal/Code4CT-Partners-Take-A-Lot-Logo-1.png" alt="takeALot">
+                <img id="carItem9" class="item" src="images/carousal/Code4CT-Partners-TNS.png" alt="TNS">
+                <img id="carItem10" class="item" src="images/carousal/Code4CT-Partners-US-Department-Of-State-Logo.png" alt="us">
+                <img id="carItem11" class="item" src="images/carousal/Code4ct-Partners-WeTech.png" alt="tech">
+                <img id="carItem12" class="item" src="images/carousal/Code4ct-Partners-Where-Is-My-Transport.png" alt="transport">
+                <img id="carItem13" class="item" src="images/carousal/DGMurrayTrust-1.png" alt="trust">
+                <img id="carItem14" class="item" src="images/carousal/partner_capitec-1.png" alt="capitec">
+                <img id="carItem15" class="item" src="images/carousal/partner_google-1.png" alt="google">
+                <img id="carItem16" class="item" src="images/carousal/rsz_1aws_logo_web_300px_2.png" alt="laws">
+            </div>
+        </div>
+
+        <script type="text/javascript">
+        </script>
+
+        <!-- Here we have two footers, one being normal and the other absolute -->
+        <footer class="sectionContainer">
+            <div class="footerSections" id="address">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div>
+                    <p>Tel:</p>
+                    <p>021 685 0991</p>
+
+                    <p>Email:</p>
+                    <p>info@code4ct.com</p>
+
+                    <p>Physical address:</p>
+                    <p>Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
+                </div>
+            </div>
+            <div class="footerSections legal">
+                <h1>Legal</h1>
+                <p>
+                  Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)
+                </p>
+            </div>
+            <div class="footerSections">
+                <h1>Code4CT</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Portfolio</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </footer>
+        <footer id="absoluteFooter">
+            <span id="leftPart">Copyright © 2017 | Pivacy Policy</span>
+            <span id="rightPart">Follow Us: # # # # #</span>
+        </footer>
+        <div id="backToTop"><img src="images/up-arrow-angle_icon-icons.com_73127.png" alt=""></div>
+
+        <script src="js/slide_show.js"></script>
+        <script src="js/initial_script.js"></script>
+
     </body>
 </html>
