@@ -32,7 +32,6 @@ nav {
   top: 0;
   margin: 0 auto;
   grid-gap: 2px;
-  box-shadow: 0 0 50px -10px #2a2a2a;
   z-index: 3; }
   nav #logo {
     grid-column: 1/4;
@@ -156,7 +155,7 @@ nav {
   width: 240px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr; }
   .buttonBox .sectionButton {
     background-color: #2a2a2a;
     color: #f9f9f9;
@@ -235,7 +234,7 @@ nav {
       background-image: url("../images/Hectic-Nine-9-Logo-Code4CT-400x250.png"); }
   .sectionContainer #workImages {
     grid-template-rows: repeat(4, 1fr);
-    height: 100vw; }
+    height: 800px; }
     .sectionContainer #workImages div {
       background-color: #555555;
       opacity: 0.6;
@@ -264,7 +263,6 @@ nav {
         margin: 0 auto; }
     .sectionContainer #teamImages .about {
       padding: 5%;
-      box-shadow: 0 20px 40px -20px #9a9a9a;
       margin-bottom: 100px; }
   .sectionContainer #miniForm {
     text-align: center;
@@ -310,6 +308,9 @@ nav {
   .banner .stopFloat {
     clear: both; }
 
+#fixLayout {
+  padding: 0 10%; }
+
 .alignLeft {
   width: 140px;
   margin: 0 auto; }
@@ -324,7 +325,6 @@ nav {
     font-size: 35px; }
 
 footer {
-  padding: 2% !important;
   display: grid;
   grid-template-columns: 1fr 1fr; }
   footer h1 {
@@ -347,6 +347,7 @@ footer {
 
 #absoluteFooter {
   display: grid;
+  grid-template-columns: 1fr;
   background-color: #d7376b;
   color: #f9f9f9;
   padding: 1%;
@@ -354,22 +355,25 @@ footer {
   #absoluteFooter span {
     padding: 1%; }
   #absoluteFooter #leftPart {
-    text-align: left; }
+    text-align: left;
+    margin-left: 15%; }
   #absoluteFooter #rightPart {
     display: none;
-    text-align: right; }
+    text-align: right;
+    margin-right: 15%; }
 
 .carousel {
   position: relative;
   overflow: hidden;
-  height: 70px;
+  height: 200px;
   background-color: #2a2a2a; }
   .carousel #carousalWrapper {
+    margin-top: 50px;
     padding: 0;
     width: 1700px; }
     .carousel #carousalWrapper .item {
       position: absolute;
-      width: 100px; }
+      width: 150px; }
     .carousel #carousalWrapper #carItem16 {
       margin-top: 10px; }
 
@@ -403,6 +407,8 @@ footer {
 .noPadding {
   padding-bottom: 0;
   padding-top: 0; }
+  .noPadding .padTop {
+    padding-top: 20%; }
 
 #abtButton {
   margin: 0; }
@@ -418,10 +424,10 @@ footer {
 
 .form {
   display: grid;
-  margin-right: 10%;
   grid-gap: 10px; }
   .form input {
     padding: 5%;
+    width: 100%;
     border-radius: 2px;
     border: 1px grey solid;
     color: #555555; }
@@ -429,6 +435,7 @@ footer {
     padding: 15px;
     padding-left: 10px;
     border-radius: 2px;
+    width: 100%;
     border: 1px grey solid; }
   .form button {
     background-color: #d7376b;
@@ -457,9 +464,9 @@ footer {
     height: 105px; }
     .portImageBox .portImgs img {
       width: 100%;
-      transition: transform 900ms ease-in-out; }
+      transition: transform 1800ms ease-in-out; }
       .portImageBox .portImgs img:hover {
-        transform: scale(1.2); }
+        transform: scale(1.1); }
 
 #portTop {
   text-align: center;
@@ -498,15 +505,26 @@ footer {
   width: 50px;
   height: 50px;
   right: -50px;
-  bottom: 100px;
+  bottom: 150px;
   background-color: #d7376b;
   border-radius: 50%;
   opacity: 0;
-  transition: transform 300ms linear, opacity 300ms linear; }
+  transition: transform 300ms linear, opacity 300ms linear;
+  z-index: 5;
+  box-shadow: 0 0 30px white; }
   #backToTop img {
     width: 30px;
     margin: auto; }
 
+.canvas {
+  height: 150px;
+  margin: 0 auto;
+  width: 100%; }
+
+.bottom {
+  padding: 2% !important; }
+
+/*-------------------------------------------------------------------------*/
 /*---/---Media Enquiries for the Homepage---/---*/
 @media (min-width: 600px) {
   nav {
@@ -539,9 +557,10 @@ footer {
       width: 100%;
       margin: 0 auto; }
 
-  #absoluteFooter #rightPart {
-    display: block;
-    grid-column: 3/4; }
+  #absoluteFooter {
+    grid-template-columns: 1fr 1fr; }
+    #absoluteFooter #rightPart {
+      display: block; }
 
   .aboutFix {
     margin: 0 10%; }
@@ -553,6 +572,8 @@ footer {
 
   .contactUs {
     grid-template-columns: 1fr 1fr; }
+    .contactUs .info {
+      margin-left: 20%; }
 
   .portImageBox {
     grid-template-columns: 1fr 1fr 1fr; }
@@ -606,17 +627,16 @@ footer {
 
   .sectionContainer .intro {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr; }
+    grid-template-columns: 1.1fr 0.9fr;
+    height: 450px; }
     .sectionContainer .intro .images {
-      height: 25vw;
-      margin-top: 50%;
-      transform: translateY(-50%); }
+      height: 420px; }
   .sectionContainer #teamImages {
     grid-template-columns: repeat(4, 1fr); }
   .sectionContainer #workImages {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: 25vw;
+    height: 450px;
     margin-bottom: 50px; }
     .sectionContainer #workImages #imgBig {
       grid-column: 3/5;
@@ -645,7 +665,7 @@ footer {
       margin-left: 0; }
 
   .contactUs {
-    grid-template-columns: 1fr 0.3fr; }
+    grid-template-columns: 1fr 0.4fr; }
 
   .portImgsWrap {
     width: 400%; }
@@ -661,11 +681,12 @@ footer {
     animation-name: fade;
     animation-duration: 3s; }
     .fade .slideImgs {
-      height: 600px !important; } }
-.sectionButton {
+      height: 700px !important; } }
+button {
   position: relative;
-  height: 40px; }
-  .sectionButton span {
+  height: 40px;
+  width: 110px; }
+  button span {
     position: absolute;
     z-index: 2;
     top: 50%;

@@ -69,15 +69,15 @@ backToTop.onclick = function accend() {
 /*--------------------------------------------*/
 
   let count = setInterval(incNum, 30);
-  let s1 = 200; let s2 = 680;
-  let s3 = 3020; let s4 = 8665;
+  let s1 = 300-150; let s2 = 780-150;
+  let s3 = 3120-150; let s4 = 8765-150;
   let i = 0;
   function incNum() {
     $("#counter1").html(s1 + "+");
     $("#counter2").html(s2 + "+");
     $("#counter3").html(s3 + "+");
     $("#counter4").html(s4 + "+");
-    if (i >= 100) {
+    if (i >= 150) {
       clearInterval(count);
     }
     s1++; s2++; s3++; s4++; i++;
@@ -89,7 +89,7 @@ backToTop.onclick = function accend() {
   /*----------------carousel-----------------*/
 /*--------------------------------------------*/
 for (let n = 1; n <= 16; n++) {
-  $("#carItem" + n).css("margin-left", -955+(100*n) + "px")
+  $("#carItem" + n).css("margin-left", -1000+(150*n) + "px")
 }
 //functionality for the carousel
 let move = setInterval(frame, 1000);
@@ -101,24 +101,12 @@ function frame() {
   for (let i = 1; i <= 16; i++) {
     //there are only four images in this example
     if (m == 16) {
-      $("#carItem" + i).animate({marginLeft: "660px"}, 0)
+      $("#carItem" + i).animate({marginLeft: "1250px"}, 0)
       m = 0;
     } else {
-      $("#carItem" + i).animate({marginLeft:"-=100px"}, 2000)
+      $("#carItem" + i).animate({marginLeft:"-=150px"}, 2000)
       m++;
     }
   }
 }
 /*----------------------------------------------------------------------*/
-
-
-/*--------------------------------------------*/
-  /*----------------buttons-----------------*/
-/*--------------------------------------------*/
-
-$(".sectionButton").hover(function expand() {
-  $(this).animate({width: "125px"}, 200)
-})
-$(".sectionButton").mouseleave(function detract() {
-  $(this).animate({width: "110px"}, 130)
-})

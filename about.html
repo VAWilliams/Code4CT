@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>Code4CT | About</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js\jquery-3.3.1.min.js" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <link rel="icon" type="favicon" href="./images/title_image.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
 
@@ -30,7 +31,7 @@
         </ul>
         <div class="searchWrap">
           <input type="text" name="" value="" placeholder="search..">
-          <button type="button" name="button">#</button>
+          <button type="button" name="button"><i class="fas fa-search"></i></button>
         </div>
     </nav>
 
@@ -52,9 +53,9 @@
                   </strong>
               </p>
               <p>
-                The applications of this computational approach to problem-solving stretch beyond building beautiful functional websites. It combines mathematics, logic and algorithms, and teaches you a new way to think about the world. In September last year (2014) the UK introduced coding into their primary school curriculum. The Code4CT curriculum achieves a successful balance between skills acquisition and a fun learning environment. Participants acquire these essentials skills in a fun, creative and encouraging spacet.  Once you know how to code, you can create virtual worlds within the computer where the only limit on what is possible is your imagination. We wants to put this power into the hands and hearts of every girl, because soon not knowing the language of computers will be as challenging as being illiterate & innumerate are today.
+                The applications of this computational approach to problem-solving stretch beyond building beautiful functional websites. It combines mathematics, logic and algorithms, and teaches you a new way to think about the world. In September last year (2014) the UK introduced coding into their primary school curriculum. The Code4CT curriculum achieves a successful balance between skills acquisition and a fun learning environment. Participants acquire these essentials skills in a fun, creative and encouraging spacet.
               </p>
-              <button id="abtButton">Read More</button>
+              <button id="abtButton"> <span>Read More</span> </button>
             </div>
             <div class="asideImg">
                 <div><img src="images/article-1.jpg" alt="" width="120%"></div>
@@ -110,7 +111,7 @@
     <!-- banner classes refer to black styled elements -->
 
     <section class="sectionContainer noPadding">
-        <div>
+        <div class="padTop">
             <h1>Meet Our Team</h1>
             <hr class="orangeRule"><hr>
             <p class="stopFloat">
@@ -177,43 +178,39 @@
     </section>
 
     <!-- This elements layout had to be optimed  -->
-    <div class="banner" id="fixLayout">
-      <div class="weight">
-          <div class="alignLeft">
-            <hr class="orangeRule">
-            <h1 class="stopFloat">1800+</h1>
+    <div class="banner" id="fixLayout" style="display: grid">
+      <div>
+        <canvas class="canvas">1</canvas>
+        <div>
             <p>
-                Lorem ipsum
+                of our alumnae have gone on to further studies
             </p>
-          </div>
+        </div>
       </div>
-        <div class="weight">
-            <div class="alignLeft">
-              <hr class="orangeRule">
-              <h1 class="stopFloat">1800+</h1>
-              <p>
-                  Lorem ipsum
-              </p>
-            </div>
+      <div>
+        <canvas class="canvas">1</canvas>
+        <div>
+            <p>
+                of our alumnae have gone on to pursue STEM-related studies
+            </p>
         </div>
-        <div class="weight">
-            <div class="alignLeft">
-              <hr class="orangeRule">
-              <h1 class="stopFloat">1800+</h1>
-              <p>
-                  Lorem ipsum
-              </p>
-            </div>
+      </div>
+      <div>
+        <canvas class="canvas">1</canvas>
+        <div>
+            <p>
+                of our alumnae are at university
+            </p>
         </div>
-        <div class="weight">
-            <div class="alignLeft">
-              <hr class="orangeRule">
-              <h1 class="stopFloat">1800+</h1>
-              <p>
-                  Lorem ipsum
-              </p>
-            </div>
+      </div>
+      <div>
+        <canvas class="canvas">1</canvas>
+        <div>
+            <p>
+                of our alumnae are in IT skills development programmes
+            </p>
         </div>
+      </div>
     </div>
 
     <section class="sectionContainer">
@@ -224,57 +221,82 @@
             </p>
             <div class="buttonBox">
                 <input type="email" name="email_address" value="">
-                <button class="sectionButton readMore">SUBSCRIBE</button>
+                <button class="sectionButton readMore"> <span>SUBSCRIBE</span> </button>
             </div>
         </div>
     </section>
 
-    <div class="banner">
-        <div>
-            <img src="images/pc.png" alt="pc" width="120px">
+    <div class="banner carousel">
+        <div id="carousalWrapper">
+            <img id="carItem1" class="item" src="images/carousal/Code4CT-Partners-Automattic-Logo.png" alt="autoLogo">
+            <img id="carItem2" class="item" src="images/carousal/Code4CT-Partners-CSG-Logo.png" alt="CSGLogo">
+            <img id="carItem3" class="item" src="images/carousal/Code4CT-Partners-Deloitte-Digital.png" alt="digital">
+            <img id="carItem4" class="item" src="images/carousal/Code4CT-Partners-Lwande.png" alt="lwande">
+            <img id="carItem5" class="item" src="images/carousal/Code4CT-Partners-Mobenzi-Logo.png" alt="mobenzi">
+            <img id="carItem6" class="item" src="images/carousal/Code4CT-Partners-Open-Box.png" alt="openBox">
+            <img id="carItem7" class="item" src="images/carousal/Code4CT-Partners-Saratoga-Logo.png" alt="saratonga">
+            <img id="carItem8" class="item" src="images/carousal/Code4CT-Partners-Take-A-Lot-Logo-1.png" alt="takeALot">
+            <img id="carItem9" class="item" src="images/carousal/Code4CT-Partners-TNS.png" alt="TNS">
+            <img id="carItem10" class="item" src="images/carousal/Code4CT-Partners-US-Department-Of-State-Logo.png" alt="us">
+            <img id="carItem11" class="item" src="images/carousal/Code4ct-Partners-WeTech.png" alt="tech">
+            <img id="carItem12" class="item" src="images/carousal/Code4ct-Partners-Where-Is-My-Transport.png" alt="transport">
+            <img id="carItem13" class="item" src="images/carousal/DGMurrayTrust-1.png" alt="trust">
+            <img id="carItem14" class="item" src="images/carousal/partner_capitec-1.png" alt="capitec">
+            <img id="carItem15" class="item" src="images/carousal/partner_google-1.png" alt="google">
+            <img id="carItem16" class="item" src="images/carousal/rsz_1aws_logo_web_300px_2.png" alt="laws">
         </div>
     </div>
 
     <!-- Here we have two footers, one being normal and the other absolute -->
-    <footer class="sectionContainer">
-        <div class="footerSections" id="address">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div>
-                <p>Tel:</p>
-                <p>021 685 0991</p>
+    <footer class="sectionContainer bottom">
+            <div class="footerSections" id="address">
+                <p>
+                    Get in touch and be part of the team.
+                </p>
+                <div style="width: 90%; margin-left: 25px;">
+                    <span style="display: grid; grid-template-columns: 32px 1fr"><img src="images/icon/phone_logo.png " alt=""><p>Tel:</p></span>
+                    <p>021 685 0991</p>
 
-                <p>Email:</p>
-                <p>info@code4ct.com</p>
+                    <span style="display: grid; grid-template-columns: 32px 1fr"><img src="images/icon/envelope_logo.png" width="32px" alt=""><p>Email:</p></span>
+                    <p>info@code4ct.com</p>
 
-                <p>Physical address:</p>
-                <p>Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
+                    <span style="display: grid; grid-template-columns: 32px 1fr"><img src="images/icon/location_logo.png" width="32px" alt=""><p>Physical address:</p></span>
+                    <p>Innovate South Africa, 403 Old Castle Brewery, 6 Beach Rd, Woodstock, Cape Town, 7915</p>
+                </div>
             </div>
-        </div>
-        <div class="footerSections legal">
-            <h1>Legal</h1>
-            <p>
-              Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)
-            </p>
-        </div>
-        <div class="footerSections">
-            <h1>Code4CT</h1>
-            <ul>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Portfolio</li>
-                <li>Services</li>
-            </ul>
-        </div>
+            <div class="footerSections legal">
+                <h1>Legal</h1>
+                <p>
+                  Code for Cape Town is a project of Innovate South Africa, which is a registered non-profit (137806NPO) and a Public Beneficiary Organisation (930050338)
+                </p>
+            </div>
+            <div class="footerSections">
+                <h1>Code4CT</h1>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                </ul>
+            </div>
     </footer>
     <footer id="absoluteFooter">
         <span id="leftPart">Copyright © 2017 | Pivacy Policy</span>
-        <span id="rightPart">Follow Us: # # # # #</span>
+        <span id="rightPart">
+            Follow Us: 
+            <a href="https://www.facebook.com/code4ct/" target="_blank" ><img src="./images/facebook_logo.png" width="25px" style="
+                margin: 0 6px; margin-bottom: -6px;"></a>
+            <a href="https://twitter.com/code4ct?lang=en" target="_blank" ><img src="./images/twitter_logo.png" width="25px" style="
+                margin: 0 6px; margin-bottom: -6px;"></a>
+            <a href="https://plus.google.com/100829065774930869640" target="_blank" ><img src="./images/google_logo.png" width="25px" style="
+                margin: 0 6px; margin-bottom: -6px;"></a>
+        </span>
     </footer>
 
     <div id="backToTop"><img src="images/up-arrow-angle_icon-icons.com_73127.png" alt=""></div>
 
     <script src="js/initial_script.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/canvas.js"></script>
 </body>
 </html>
